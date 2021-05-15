@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "commonjs",
+    "esModuleInterop": true // this allows "import _ from ''" and "import * as _ from ''" to work in harmony
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/renderer/**/*"]
+}
