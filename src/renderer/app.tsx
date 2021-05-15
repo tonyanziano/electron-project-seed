@@ -30,7 +30,11 @@ export const App: React.FC<AppProps> = (_props) => {
         </li>
       </ul>
       <span>
-        Created by <a href="https://github.com/tonyanziano">@tonyanziano</a> --{" "}
+        Created by{" "}
+        <a href="https://github.com/tonyanziano" target="_blank">
+          @tonyanziano
+        </a>{" "}
+        --{" "}
         <a href="https://tonyanziano.com" target="_blank">
           tonyanziano.com
         </a>
