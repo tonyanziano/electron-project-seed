@@ -1,9 +1,12 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
+// set this environment variable to produce sourcemaps and un-minify code
+const isDev = process.env.NODE_ENV === "development";
+
 module.exports = {
-  devtool: "inline-source-map",
-  mode: "development",
+  devtool: isDev ? "inline-source-map" : false,
+  mode: isDev ? "development" : "production",
   entry: path.resolve("./src/renderer/index.tsx"),
   output: {
     path: path.resolve("./dist"),
