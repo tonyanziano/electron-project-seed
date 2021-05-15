@@ -31,4 +31,5 @@ module.exports = {
       title: "Electron Shutdown POC App",
     }),
   ],
+  watch: process.env.WATCH_RENDERER ? true : false,
 };

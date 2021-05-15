@@ -9,7 +9,8 @@
     "build:main": "tsc -P tsconfig.main.json",
     "clean": "rimraf dist",
     "start": "electron dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:renderer": "cross-env WATCH_RENDERER=true webpack"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "typescript": "^4.2.4"
   },
   "devDependencies": {
+    "@types/react": "^17.0.5",
     "cross-env": "^7.0.3",
     "electron": "^12.0.7",
     "html-webpack-plugin": "^5.3.1",
