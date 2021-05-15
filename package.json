@@ -15,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@glitz/core": "^2.1.5",
+    "@glitz/transformers": "^2.0.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.2.4"
